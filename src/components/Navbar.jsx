@@ -50,7 +50,7 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/in/al-amin-parvaz1"
             target="_blank"
-            class=" py-3 px-[5px] rounded-[10px] btnBackground"
+            className=" py-3 px-[5px] border border-white/5 rounded-[10px] cursor-pointer btnBackground"
           >
             <span className="bg-gradient-to-r text-white font-semibold from-[#6431FE] to-[#B696FF] hover:bg-gradient-to-l hover:from-[#8750f7] transition-all duration-300 hover:to-[#2a1454] px-6 py-2 rounded-[10px]">
               Hire Me

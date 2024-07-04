@@ -1,42 +1,51 @@
-import React from "react";
+import banner from "../assets/banner.png";
+import { LuDownload } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <div className="max-w-[1480px] mt-4 mb-40 mx-auto w-[87%]">
-      <div className="flex ">
+    <div className="max-w-[1480px] pt-4 font-inter mx-auto w-[92%] mt-10 pb-40">
+      <div className="shape right"></div>
+      <div className="flex text-white">
         {/* left side */}
-        <div className="flex-1">
-          <h6>Hello there</h6>
-          <h6>I am Amdadul Haque Bhuiyan</h6>
-          <h1>AFull Stact Developer_</h1>
+        <div className="flex-1 ">
+          <div className="text-xl font-medium space-y-2">
+            <h6>Hello,</h6>
+            <h6>I am Al Amin Parvaz</h6>
+          </div>
+          <h1 className="text-5xl font-bold mt-4">
+            A{" "}
+            <span className="bg-gradient-to-r from-[#6431FE] to-[#B696FF] inline-block text-transparent bg-clip-text">
+              Full Stact Developer_
+            </span>
+          </h1>
 
-          <p className="text-[#4d4c7b] text-base w-[80%]">
-            We are proud to be a trusted healthcare provider in our community,
-            and we look forward to serving you and your family with excellence,
-            integrity, and compassion. Your health is our priority, and we are
-            here for you every step of the way. We believe in treating each
-            patient with dignity, respect, and empathy, ensuring that they
-            receive the attention and care they deserve.
+          <p className="text-base text-gray-300 mt-4     mb-7 w-[90%]">
+            I am a Dedicated Junior MERN Stack Developer Developer. My aim to
+            contribute meaningfully to projects that challenge and inspire me,
+            driving success for the company. My Experience in Graphic Design
+            helps me make eye-catching and Dynamic websites. My Passionate for
+            Software Development makes me grow quicker and more Proactive.
           </p>
 
-          <button
-            className={`flex mt-10 text-base text-black bg-[#FFC637] font-medium rounded-xl py-3  px-6`}
+          <a
+            download
+            href="/src/assets/Front end Developer Al Amin- Resume.pdf .pdf"
+            className="  p-[5px] border flex w-fit  border-white/5 rounded-[10px] cursor-pointer btnBackground"
           >
-            Learn more
-          </button>
+            <span className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] hover:bg-gradient-to-l hover:from-[#8750f7] transition-all duration-300 hover:to-[#2a1454] px-9 py-3 rounded-[10px] w-fit gap-2 flex items-center">
+              <span>Download Resume</span>
+              <LuDownload></LuDownload>
+            </span>
+          </a>
         </div>
 
         {/* right side */}
-        <div className="flex-1 relative ">
-          <img src={"imgPeople"} alt="" />
-          {/* massage box */}
-          <div className="p-7 -bottom-10 -left-24 absolute w-96 rounded-[30px] text-white bg-[#343268]">
-            <h5 className="font-medium text-2xl mb-2">Our mission is simple</h5>
-            <p className="font-normal text-base opacity-80">
-              To provide high-quality healthcare services that are accessible,
-              personalized, and patient-centered.
-            </p>
-          </div>
+        <div className="flex-1 ima relative ">
+          <img
+            className="rounded-[100px] ml-auto w-96 relative imageProfile z-20"
+            src={banner}
+            alt=""
+          />
         </div>
       </div>
     </div>
