@@ -21,7 +21,7 @@ font-family: "Inter", sans-serif;
     position: absolute;
     width: 1600px;
     height: 1600px;
-    top: -90%;
+    top: -60%;
     z-index: -1;
     left: -60%;
     background: radial-gradient(34.98% 34.98% at 50% 50%, #725BDA 0%, rgba(6, 19, 45, 0) 100%);

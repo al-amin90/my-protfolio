@@ -14,7 +14,7 @@ const TechnicalSkills = () => {
   return (
     <div className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-8 pb-40">
       <div className="shape"></div>
-      <SubHeading title="My Speciality"></SubHeading>
+      <SubHeading title="Speciality"></SubHeading>
       <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
         My Technical Skills
       </h2>
