@@ -26,6 +26,7 @@ font-family: "Inter", sans-serif;
     left: -60%;
     background: radial-gradient(34.98% 34.98% at 50% 50%, #725BDA 0%, rgba(6, 19, 45, 0) 100%);
     opacity: 0.5;
+    overflow-y: hidden;
 }
 
 .shape.right {
@@ -58,4 +59,9 @@ font-family: "Inter", sans-serif;
     transition-duration: 0.7s, 0.7s, 0.15s;
     transition-property: left, top, opacity;
     transition-timing-function: linear;
+}
+
+.bannerImg .shape{
+        width: 1350px;
+            height: 1350px;
 }

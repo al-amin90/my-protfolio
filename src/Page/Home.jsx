@@ -7,6 +7,7 @@ import line from "../assets/line.png";
 import BannerImg from "../components/BannerImg";
 import Footer from "../components/Footer";
 import Education from "../components/Education";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Projects></Projects>
       </div>
       <Education></Education>
+      <Contact></Contact>
       <BannerImg></BannerImg>
       <Footer></Footer>
     </div>

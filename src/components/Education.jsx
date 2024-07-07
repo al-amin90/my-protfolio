@@ -3,7 +3,11 @@ import SubHeading from "./SmallComponents/SubHeading";
 
 const Education = () => {
   return (
-    <div className="max-w-[1480px] relative z-20 font-inter  mx-auto w-[92%] pb-20">
+    <div
+      id="education"
+      className="max-w-[1480px] relative z-10 font-inter  mx-auto w-[92%] pb-20"
+    >
+      <div className="shape right "></div>
       <SubHeading title="CSE "></SubHeading>
       <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
         My Education

@@ -21,28 +21,55 @@ const Projects = () => {
         <div className="group relative">
           <img src={nova} className="rounded-xl" alt="" />
 
-          <div class="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-20 group-hover:bottom-5 backdrop-blur-xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
-            <div class="max-w-[85%]">
-              <h1 class="text-xl text-white font-semibold">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-20 group-hover:bottom-5 backdrop-blur-xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
+            <div className="max-w-[85%]">
+              <h1 className="text-xl text-white font-semibold">
                 Project Name: novaNews
               </h1>
-              <p class="text-sm text-justify text-white mt-1 font-normal">
+              <p className="text-sm text-justify text-white mt-1 font-normal">
                 In this website. Users can choose and buy a subscription for a
                 set period, after which they revert to normal user status. All
                 data is securely stored in MongoDB, dynamically filtered by
                 publisher and tags.....
               </p>
               <div>
-                <div class="flex text-white justify-between my-3">
+                <div className="flex text-sm mt-2">
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      React JS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Tailwind CSS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Node js
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Mongo DB
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      JWT
+                    </span>
+                  </span>
+                </div>
+                <div className="flex text-white justify-between my-3">
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://nova-news-c2549.web.app/"
                   >
                     Live View <FiMonitor />
                   </a>
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://github.com/al-amin90/nova-news-client"
                   >
@@ -60,28 +87,55 @@ const Projects = () => {
         <div className="group relative">
           <img src={nounet} className="rounded-xl" alt="" />
 
-          <div class="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
-            <div class="max-w-[85%]">
-              <h1 class="text-xl text-white font-semibold">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
+            <div className="max-w-[85%]">
+              <h1 className="text-xl text-white font-semibold">
                 Project Name: NourishNet
               </h1>
-              <p class="text-sm text-justify text-white mt-1 font-normal">
+              <p className="text-sm text-justify text-white mt-1 font-normal">
                 This platform designed to connect communities with surplus food
                 to those in need. Our mission is to reduce food waste while
                 ensuring that everyone has access to nutritious meals. With
                 NourishNet, individuals.....
               </p>
               <div>
-                <div class="flex text-white justify-between my-3">
+                <div className="flex text-sm mt-2">
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      React JS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Tailwind CSS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Node js
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Mongo DB
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      JWT
+                    </span>
+                  </span>
+                </div>
+                <div className="flex text-white justify-between my-3">
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://nourish-net-9ac72.web.app/"
                   >
                     Live View <FiMonitor />
                   </a>
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://github.com/al-amin90/nourish-net-client"
                   >
@@ -99,28 +153,55 @@ const Projects = () => {
         <div className="group relative">
           <img src={journy} className="rounded-xl" alt="" />
 
-          <div class="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px] ">
-            <div class="max-w-[85%]">
-              <h1 class="text-xl text-white font-semibold">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px] ">
+            <div className="max-w-[85%]">
+              <h1 className="text-xl text-white font-semibold">
                 Project Name: JourneyJoy
               </h1>
-              <p class="text-sm text-justify text-white mt-1 font-normal">
+              <p className="text-sm text-justify text-white mt-1 font-normal">
                 In this website, Click on a specific country to view all tourist
                 spots in that region, as posted by users. Users can add, delete,
                 and modify their favorite spots. The platform allows sorting by
                 average cost and features a user-friendly UI/UX design......
               </p>
               <div>
-                <div class="flex text-white justify-between my-3">
+                <div className="flex text-sm mt-2">
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      React JS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Tailwind CSS
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Node js
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      Mongo DB
+                    </span>
+                  </span>
+                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
+                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
+                      JWT
+                    </span>
+                  </span>
+                </div>
+                <div className="flex text-white justify-between my-3">
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://journey-joy-client.web.app/"
                   >
                     Live View <FiMonitor />
                   </a>
                   <a
-                    class="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
+                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
                     target="_blank"
                     href="https://github.com/al-amin90/journey-joy-client"
                   >
