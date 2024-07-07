@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import line from "../assets/line.png";
 import BannerImg from "../components/BannerImg";
 import Footer from "../components/Footer";
+import Education from "../components/Education";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <TechnicalSkills></TechnicalSkills>
         <Projects></Projects>
       </div>
+      <Education></Education>
       <BannerImg></BannerImg>
       <Footer></Footer>
     </div>

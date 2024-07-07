@@ -139,12 +139,12 @@ const Projects = () => {
 
       <div className="flex items-center justify-center mt-8">
         <a
-          download
-          href="/src/assets/Front end Developer Al Amin- Resume.pdf .pdf"
+          target="_blank"
+          href="https://github.com/al-amin90"
           className="  p-[5px] border flex w-fit  border-white/5 rounded-[10px] cursor-pointer btnBackground relative "
         >
           <span className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] px-9 py-3 rounded-[10px] w-fit gap-2 items-center inline-flex flashEffect relative overflow-hidden">
-            <span>See All 50+</span>
+            <span>See All 55+</span>
           </span>
         </a>
       </div>
