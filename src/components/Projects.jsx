@@ -13,16 +13,16 @@ const Projects = () => {
       className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-8 pb-40"
     >
       <SubHeading title="Expert "></SubHeading>
-      <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
+      <h2 className="text-center text-white text-3xl md:text-4xl z-50  font-inter font-semibold mt-4">
         My Recent Projects
       </h2>
 
-      <div className="grid grid-cols-1 gap-5 mt-16 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 mt-6 md:mt-16 lg:grid-cols-2">
         <div className="group relative">
           <img src={nova} className="rounded-xl" alt="" />
 
-          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-20 group-hover:bottom-5 backdrop-blur-xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
-            <div className="max-w-[85%]">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 md:-left-5 duration-500 w-full md:w-[550px] ">
+            <div className=" md:max-w-[85%]">
               <h1 className="text-xl text-white font-semibold">
                 Project Name: novaNews
               </h1>
@@ -33,7 +33,7 @@ const Projects = () => {
                 publisher and tags.....
               </p>
               <div>
-                <div className="flex text-sm mt-2">
+                <div className="flex gap-1 flex-wrap text-sm mt-2">
                   <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
                     <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
                       React JS
@@ -79,7 +79,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block ">
               <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>
@@ -87,8 +87,8 @@ const Projects = () => {
         <div className="group relative">
           <img src={nounet} className="rounded-xl" alt="" />
 
-          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px]">
-            <div className="max-w-[85%]">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 md:-left-5 duration-500 w-full md:w-[550px] ">
+            <div className=" md:max-w-[85%]">
               <h1 className="text-xl text-white font-semibold">
                 Project Name: NourishNet
               </h1>
@@ -99,7 +99,7 @@ const Projects = () => {
                 NourishNet, individuals.....
               </p>
               <div>
-                <div className="flex text-sm mt-2">
+                <div className="flex flex-wrap gap-1 text-sm mt-2">
                   <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
                     <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
                       React JS
@@ -145,7 +145,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block ">
               <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>
@@ -153,8 +153,8 @@ const Projects = () => {
         <div className="group relative">
           <img src={journy} className="rounded-xl" alt="" />
 
-          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 -left-5 duration-500 w-[550px] ">
-            <div className="max-w-[85%]">
+          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 md:-left-5 duration-500 w-full md:w-[550px] ">
+            <div className=" md:max-w-[85%]">
               <h1 className="text-xl text-white font-semibold">
                 Project Name: JourneyJoy
               </h1>
@@ -165,7 +165,7 @@ const Projects = () => {
                 average cost and features a user-friendly UI/UX design......
               </p>
               <div>
-                <div className="flex text-sm mt-2">
+                <div className="flex gap-1 flex-wrap text-sm mt-2">
                   <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
                     <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
                       React JS
@@ -211,7 +211,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block ">
               <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>

@@ -4,23 +4,23 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-10 pb-40">
+    <div className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-10 md:pb-40 pb-16">
       <div className="shape right "></div>
-      <div className="flex text-white">
+      <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-0 text-white">
         {/* left side */}
         <div className="flex-1 ">
-          <div className="text-xl font-medium space-y-2">
+          <div className="text-lg md:text-xl font-medium space-y-1 md:space-y-2">
             <h6>Hello,</h6>
             <h6>I am Al Amin Parvaz</h6>
           </div>
-          <h1 className="text-5xl font-bold mt-4">
+          <h1 className="text-2xl md:text-5xl font-bold mt-4">
             A{" "}
             <span className="bg-gradient-to-r from-[#6431FE] to-[#B696FF] inline-block text-transparent bg-clip-text">
               Full Stact Developer_
             </span>
           </h1>
 
-          <p className="text-base text-gray-300 mt-4 mb-7">
+          <p className="text-sm md:text-base text-gray-300 mt-4 mb-7">
             I am a Dedicated Junior MERN Stack Developer Developer. My aim to
             contribute meaningfully to projects that challenge and inspire me,
             driving success for the company. My 2 Year Experience in Graphic
@@ -42,8 +42,8 @@ const Banner = () => {
         </div>
 
         {/* right side */}
-        <div className="flex-1 mr-12 relative image">
-          <div className=" ml-auto w-96 relative imageProfile">
+        <div className="flex-1 mx-auto md:mr-12 relative image">
+          <div className=" ml-auto w-72 lg:w-96 relative imageProfile">
             <img className="rounded-[100px] " src={banner} alt="" />
           </div>
         </div>

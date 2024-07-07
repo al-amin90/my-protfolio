@@ -2,7 +2,7 @@ import logo from "/logo.png";
 
 const Navbar = () => {
   const navLinks = (
-    <div className="flex text-primaryColor font-medium gap-6 text-gray-500 text-base *:cursor-pointer ">
+    <div className="flex lg:flex-row flex-col text-primaryColor font-medium gap-6 text-[#6F3EFE] lg:text-gray-500 text-base *:cursor-pointer ">
       <li className="text-white ">Home</li>
       <li className="hover:text-white ">
         <a href="#skills" className="p-0">
@@ -32,8 +32,12 @@ const Navbar = () => {
     <div className=" ">
       <div className="navbar relative z-30 max-w-[1480px] pt-4 font-inter mx-auto w-[95%]">
         <div className="navbar-start ">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div className="dropdown relative z-50">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn text-white btn-ghost lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -51,7 +55,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm border border-white/20 dropdown-content backdrop-blur-lg rounded-box z-[1] mt-3 w-52 p-2  px-4 shadow"
             >
               {navLinks}
             </ul>

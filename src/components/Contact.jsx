@@ -10,14 +10,14 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1480px] relative z-20 pt-4 font-inter mb-24 mx-auto w-[92%] mt-12 "
+      className="max-w-[1480px] relative z-20 md:pt-4 font-inter mb-6 md:mb-24 mx-auto w-[92%] mt-12 "
     >
       <SubHeading title="get in touch"></SubHeading>
-      <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
+      <h2 className="text-center text-white text-3xl md:text-4xl z-50  font-inter font-semibold mt-4">
         Contact with me
       </h2>
 
-      <div className="grid grid-cols-2 gap-5 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-7 md:mt-12">
         <div className="">
           <img
             className=" w-full h-[26rem] opacity-95 object-cover rounded-xl"
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-6">
-              <div className="grid gap-3 grid-cols-2">
+              <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
                 <input
                   type="text"
                   placeholder="Name"
@@ -85,7 +85,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-5">
         <div className="relative flex mt-5 items-center justify-center flex-col">
           <div className="bg-gradient-to-t gap-4 p-4 px-8 justify-between rounded-xl from-[#ffffff0d] to-[#ffffff00] hover: border shadow-2xl border-white/20 w-full ">
             <div>

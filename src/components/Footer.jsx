@@ -5,14 +5,14 @@ import { FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <section className="mt-32 ">
-      <div className="py-20 border-purple-400 border-t relative z-30 rounded-2xl bg-gradient-to-b from-[#ffffff0d] to-[#ffffff00]">
+    <section className="mt-14 md:mt-32 ">
+      <div className="py-16 md:py-20  border-purple-400 border-t relative z-30 rounded-2xl bg-gradient-to-b from-[#ffffff0d] to-[#ffffff00]">
         <div className="text-gray-200 flex justify-center mx-auto flex-col max-w-44 cursor-pointer">
           <div>
-            <img src={logo} alt="" />
+            <img src={logo} className="mx-auto" alt="" />
           </div>
         </div>
-        <div className="max-w-[900px] mx-auto">
+        <div className="max-w-[900px] mx-auto w-[95%]">
           <p className="text-base text-gray-400 mt-6 font-medium text-center">
             Let's build something amazing together. I'm available for freelance
             projects, collaborations, and full-time opportunities. Drop me a

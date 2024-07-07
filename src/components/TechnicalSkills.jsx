@@ -14,16 +14,16 @@ const TechnicalSkills = () => {
   return (
     <div
       id="skills"
-      className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-8 pb-40"
+      className="max-w-[1480px] relative z-20 md:pt-4 font-inter  mx-auto w-[92%] mt-8 pb-16 md:pb-40"
     >
-      <div className="shape"></div>
+      <div className="lg:block shape hidden"></div>
       <SubHeading title="Speciality"></SubHeading>
-      <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
+      <h2 className="text-center text-white text-3xl md:text-4xl z-50  font-inter font-semibold mt-4">
         My Technical Skills
       </h2>
 
       {/* all skills */}
-      <div className="inline-flex justify-center items-center flex-wrap mt-16 gap-3  ">
+      <div className="inline-flex justify-center items-center flex-wrap mt-6 md:mt-16 gap-3  ">
         <div className="relative">
           <div className="bg-gradient-to-b gap-4 p-4 px-8 justify-between rounded-xl from-[#ffffff0d] to-[#ffffff00] hover:shadow-[#2a1454] shadow-black/20 hover: border shadow-2xl border-white/20 inline-flex flashEffect relative overflow-hidden ">
             <img

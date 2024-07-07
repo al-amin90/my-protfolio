@@ -9,7 +9,7 @@ const Education = () => {
     >
       <div className="shape right "></div>
       <SubHeading title="CSE "></SubHeading>
-      <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
+      <h2 className="text-center mt-1 text-white text-3xl md:text-4xl z-50  font-inter font-semibold   md:mt-4">
         My Education
       </h2>
 
