@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import TechnicalSkills from "../components/TechnicalSkills";
 import Projects from "../components/Projects";
 import line from "../assets/line.png";
+import BannerImg from "../components/BannerImg";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
         <TechnicalSkills></TechnicalSkills>
         <Projects></Projects>
       </div>
+      <BannerImg></BannerImg>
+      <Footer></Footer>
     </div>
   );
 };

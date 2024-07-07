@@ -8,8 +8,11 @@ import { TbSquareRotatedFilled } from "react-icons/tb";
 
 const Projects = () => {
   return (
-    <div className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-8 pb-40">
-      <SubHeading title="Speciality"></SubHeading>
+    <div
+      id="projects"
+      className="max-w-[1480px] relative z-20 pt-4 font-inter  mx-auto w-[92%] mt-8 pb-40"
+    >
+      <SubHeading title="Expert "></SubHeading>
       <h2 className="text-center text-white text-4xl z-50  font-inter font-semibold mt-4">
         My Recent Projects
       </h2>
@@ -50,7 +53,7 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <TbSquareRotatedFilled className="text-5xl  text-[#6431FE] animate-spin" />
+              <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>
         </div>
@@ -89,7 +92,7 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <TbSquareRotatedFilled className="text-5xl  text-[#6431FE] animate-spin" />
+              <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>
         </div>
@@ -128,7 +131,7 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <TbSquareRotatedFilled className="text-5xl  text-[#835bfc] animate-spin" />
+              <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
             </div>
           </div>
         </div>

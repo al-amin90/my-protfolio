@@ -4,12 +4,22 @@ const Navbar = () => {
   const navLinks = (
     <div className="flex text-primaryColor font-medium gap-6 text-gray-500 text-base *:cursor-pointer ">
       <li className="text-white ">Home</li>
-      <li className="hover:text-white ">Services</li>
-      <li className="hover:text-white ">Projects</li>
-      <li className="hover:text-white ">Skills</li>
-      <li className="hover:text-white ">About me</li>
-      <li className="hover:text-white ">Blogs</li>
-      <li className="hover:text-white ">Contact</li>
+      <li className="hover:text-white ">
+        <a href="#skills" className="p-0">
+          Skills
+        </a>
+      </li>
+      <li className="hover:text-white ">
+        {" "}
+        <a href="#projects" className="p-0">
+          Projects
+        </a>
+      </li>
+      <li className="hover:text-white ">
+        <a href="#Contact" className="p-0">
+          Contact
+        </a>
+      </li>
     </div>
   );
 
