@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className=" ">
-      <div className="navbar relative z-20 max-w-[1480px] pt-4 font-inter mx-auto w-[95%]">
+      <div className="navbar relative z-30 max-w-[1480px] pt-4 font-inter mx-auto w-[95%]">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,9 +50,9 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/in/al-amin-parvaz1"
             target="_blank"
-            className=" py-3 px-[5px] border border-white/5 rounded-[10px] cursor-pointer btnBackground"
+            className=" p-1 border border-white/5 rounded-[10px] cursor-pointer btnBackground relative inline-flex"
           >
-            <span className="bg-gradient-to-r text-white font-semibold from-[#6431FE] to-[#B696FF] hover:bg-gradient-to-l hover:from-[#8750f7] transition-all duration-300 hover:to-[#2a1454] px-6 py-2 rounded-[10px]">
+            <span className="bg-gradient-to-r text-white font-semibold from-[#6431FE] to-[#B696FF] transition-all duration-300 px-6 py-2 rounded-[10px] flashEffect relative overflow-hidden">
               Hire Me
             </span>
           </a>

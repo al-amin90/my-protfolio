@@ -32,9 +32,9 @@ const Banner = () => {
           <a
             download
             href="/src/assets/Front end Developer Al Amin- Resume.pdf .pdf"
-            className="  p-[5px] border flex w-fit  border-white/5 rounded-[10px] cursor-pointer btnBackground"
+            className="  p-[5px] border flex w-fit  border-white/5 rounded-[10px] cursor-pointer btnBackground relative "
           >
-            <span className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] hover:bg-gradient-to-l hover:from-[#8750f7] transition-all duration-300 hover:to-[#2a1454]  px-9 py-3 rounded-[10px] w-fit gap-2 flex items-center">
+            <span className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] px-9 py-3 rounded-[10px] w-fit gap-2 items-center inline-flex flashEffect relative overflow-hidden">
               <span>Download Resume</span>
               <LuDownload></LuDownload>
             </span>

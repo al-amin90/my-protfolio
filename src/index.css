@@ -37,7 +37,7 @@ font-family: "Inter", sans-serif;
     background: linear-gradient(89.96deg, rgba(255, 255, 255, 0.05) 0.03%, rgba(255, 255, 255, 0.008) 49.67%, rgba(255, 255, 255, 0.05) 99.96%);
     backdrop-filter: blur(4px);
 }
-/* 
+
 .flashEffect::after {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0px, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0));
     content: "";
@@ -48,5 +48,14 @@ font-family: "Inter", sans-serif;
     top: -50%;
     transition: all 0.7s ease 0s;
     width: 200%;
-} */
+    z-index: 100;
+}
 
+.flashEffect:hover::after {
+    left: -30%;
+    opacity: 1;
+    top: -20%;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-property: left, top, opacity;
+    transition-timing-function: linear;
+}
