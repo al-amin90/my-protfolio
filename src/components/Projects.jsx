@@ -1,12 +1,21 @@
-import nova from "../assets/Project/novaNewsT.png";
-import nounet from "../assets/Project/neutoriasT.png";
-import journy from "../assets/Project/journyT.png";
+
+import { useNavigate } from "react-router-dom";
+import Project from "./SmallComponents/Project";
 import SubHeading from "./SmallComponents/SubHeading";
-import { FiMonitor } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
-import { TbSquareRotatedFilled } from "react-icons/tb";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([])
+  const navigate = useNavigate()
+
+useEffect(() => {
+  fetch(`/project.json`)
+  .then(res => res.json())
+  .then(data => {
+    setProjects(data)
+  })
+}, [])
+
   return (
     <div
       id="projects"
@@ -18,85 +27,22 @@ const Projects = () => {
       </h2>
 
       <div className="grid grid-cols-1 gap-5 mt-6 md:mt-16 lg:grid-cols-2">
-        <div className="group relative">
-          <img src={nova} className="rounded-xl" alt="" />
-
-          <div className="absolute h-fit flex justify-between items-center bg-gradient-to-r p-5 from-[#8850f71c] to-[#2a145425] group-hover:opacity-100 transition-all -bottom-16 group-hover:bottom-5 backdrop-blur-2xl rounded-2xl opacity-0 md:-left-5 duration-500 w-full md:w-[550px] ">
-            <div className=" md:max-w-[85%]">
-              <h1 className="text-xl text-white font-semibold">
-                Project Name: novaNews
-              </h1>
-              <p className="text-sm text-justify text-white mt-1 font-normal">
-                In this website. Users can choose and buy a subscription for a
-                set period, after which they revert to normal user status. All
-                data is securely stored in MongoDB, dynamically filtered by
-                publisher and tags.....
-              </p>
-              <div>
-                <div className="flex gap-1 flex-wrap text-sm mt-2">
-                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
-                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
-                      React JS
-                    </span>
-                  </span>
-                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
-                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
-                      Tailwind CSS
-                    </span>
-                  </span>
-                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
-                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
-                      Node js
-                    </span>
-                  </span>
-                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
-                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
-                      Mongo DB
-                    </span>
-                  </span>
-                  <span className="bg-gradient-to-r rounded-full text-white px-3 w-fit gap-2 flex items-center">
-                    <span className="bg-gradient-to-r font-bold from-[#6431FE] to-[#6431FE] inline-block text-transparent bg-clip-text">
-                      JWT
-                    </span>
-                  </span>
-                </div>
-                <div className="flex text-white justify-between my-3">
-                  <a
-                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
-                    target="_blank"
-                    href="https://nova-news-c2549.web.app/"
-                  >
-                    Live View <FiMonitor />
-                  </a>
-                  <a
-                    className="flex gap-x-3 text-sm lg:text-base items-center lg:px-6 px-2 py-1 lg:py-2 border rounded-full border-purple-400 hover:bg-[#2a1454] transition-all duration-700 flashEffect relative overflow-hidden"
-                    target="_blank"
-                    href="https://github.com/al-amin90/nova-news-client"
-                  >
-                    GitHub Link
-                    <FaGithub />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="hidden md:block ">
-              <TbSquareRotatedFilled className="text-5xl  text-white animate-spin" />
-            </div>
-          </div>
-        </div>
+        {
+          projects.slice(0,4).map((p, idx) => <Project key={idx} p={p}></Project>)
+        }
+     
  
       </div>
 
       <div className="flex items-center justify-center mt-8">
-        <a
-          target="_blank"
-          href="https://github.com/al-amin90"
+        <div
+        onClick={() => navigate('/allProjects')}
           className="  p-[5px] border flex w-fit  border-white/5 rounded-[10px] cursor-pointer btnBackground relative "
         >
-          <span className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] px-9 py-3 rounded-[10px] w-fit gap-2 items-center inline-flex flashEffect relative overflow-hidden">
-            <span>See All 55+</span>
+          <span  className="bg-gradient-to-r text-white font-inter from-[#6431FE] to-[#B696FF] px-9 py-3 rounded-[10px] w-fit gap-2 items-center inline-flex flashEffect relative overflow-hidden">
+            <span >See All 55+</span>
           </span>
-        </a>
+        </div>
       </div>
     </div>
   );

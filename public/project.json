@@ -1,30 +1,35 @@
 [
     {
       "name": "novaNews",
-      "description": "In this website. Users can choose and buy a subscription for a set period, after which they revert to normal user status. All data is securely stored in MongoDB, dynamically filtered by publisher and tags.....",
+      "description": "In this website. Users can choose and buy a subscription for a set period, after which they revert to normal user status. All data is securely stored in MongoDB, dynamically filtered by publisher and tags",
       "technologyStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT", "HTML", "Swiper"],
       "liveLink": "https://nova-news-c2549.web.app/",
       "gitRepo": "https://github.com/al-amin90/nova-news-client",
-      "backImage": "https://example.com/images/novanews-background.jpg",
-      "monitorImg": "https://example.com/images/novanews-monitor.jpg"
+      "backImage": "https://i.ibb.co/0BLr01S/nova-News-T.png"
     },
     {
       "name": "NourishNet",
-      "description": "This platform designed to connect communities with surplus food to those in need. Our mission is to reduce food waste while ensuring that everyone has access to nutritious meals. With NourishNet, individuals.....",
+      "description": "This platform designed to connect communities with surplus food to those in need. Our mission is to reduce food waste while ensuring that everyone has access to nutritious meals. With NourishNet, individuals",
       "technologyStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT", "HTML", "Swiper"],
       "liveLink": "https://nourish-net-9ac72.web.app/",
       "gitRepo": "https://github.com/al-amin90/nourish-net-client",
-      "backImage": "https://example.com/images/donationsystem-background.jpg",
-      "monitorImg": "https://example.com/images/donationsystem-monitor.jpg"
+      "backImage": "https://i.ibb.co/5Y2ctNC/neutorias-T.png"
     },
     {
       "name": "JourneyJoy",
-      "description": "n this website, Click on a specific country to view all tourist spots in that region, as posted by users. Users can add, delete and modify their favorite spots. The platform allows sorting by average cost and features a user-friendly UI/UX design......",
+      "description": "In this website, Click on a specific country to view all tourist spots in that region, as posted by users. Users can add, delete and modify their favorite spots. The platform allows sorting by average cost and features a user-friendly UI/UX design.",
       "technologyStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       "liveLink": "https://journey-joy-client.web.app/",
       "gitRepo": "https://github.com/al-amin90/journey-joy-client",
-      "backImage": "https://example.com/images/travelexplorer-background.jpg",
-      "monitorImg": "https://example.com/images/travelexplorer-monitor.jpg"
-    }
+      "backImage": "https://i.ibb.co/7zXJsGP/journyT.png"
+    },
+    {
+        "name": "Global Quest",
+        "description": "It is a static website designed to highlight my expertise in raw HTML and CSS, demonstrating my strong design sense and attention to detail. The site effectively showcases my ability to create clean, responsive layouts and visually appealing user interfaces. ",
+        "technologyStack": ["HTML", "Vanilla CSS"],
+        "liveLink": "https://al-amin90.github.io/globe-quest/",
+        "gitRepo": "https://github.com/al-amin90/globe-quest",
+        "backImage": "https://i.ibb.co/S5YFxh4/Global-Quest.png"
+      }
   ]
   

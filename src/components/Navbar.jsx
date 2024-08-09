@@ -1,32 +1,42 @@
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import logo from "/logo.png";
 
 const Navbar = () => {
-  const navLinks = (
-    <div className="flex lg:flex-row flex-col text-primaryColor font-medium gap-6 text-[#6F3EFE] lg:text-gray-500 text-base *:cursor-pointer ">
-      <li className="text-white ">Home</li>
-      <li className="hover:text-white ">
-        <a href="#skills" className="p-0">
-          Skills
-        </a>
-      </li>
-      <li className="hover:text-white ">
-        {" "}
-        <a href="#projects" className="p-0">
-          Projects
-        </a>
-      </li>
-      <li className="hover:text-white ">
-        <a href="#education" className="p-0">
-          Education
-        </a>
-      </li>
-      <li className="hover:text-white ">
-        <a href="#contact" className="p-0">
-          Contact
-        </a>
-      </li>
-    </div>
-  );
+const navigate = useNavigate()
+const location  = useLocation();
+
+console.log(location.pathname);
+
+  const navLinks = location?.pathname !== "/allProjects" ? <div className="flex lg:flex-row flex-col text-primaryColor font-medium gap-6 text-[#6F3EFE] lg:text-gray-500 text-base *:cursor-pointer ">
+    <NavLink to={"/"} className={({ isActive, isPending }) =>
+  isPending ? "pending" : isActive ? "text-white" : ""}>Home</NavLink>
+    <li className="hover:text-white ">
+      <a href="#skills" className="p-0">
+        Skills
+      </a>
+    </li>
+    <li className="hover:text-white ">
+      {" "}
+      <a href="#projects" className="p-0">
+        Projects
+      </a>
+    </li>
+    <li className="hover:text-white ">
+      <a href="#education" className="p-0">
+        Education
+      </a>
+    </li>
+    <li className="hover:text-white ">
+      <a href="#contact" className="p-0">
+        Contact
+      </a>
+    </li>
+  </div> : "";
+
+
+
+
+
 
   return (
     <div className=" ">
@@ -60,7 +70,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <img className="rounded-full w-12 h-12" src={logo} alt="" />
+          <img onClick={() => navigate("/")} className="rounded-full cursor-pointer w-12 h-12" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
